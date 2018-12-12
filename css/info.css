@@ -1,0 +1,262 @@
+/* ------ CSS RESET ------ */
+
+* {
+    padding:0;
+    margin: 0;
+    font-size: 100%;
+    line-height: 1.5em;}
+
+/* ------ BODY -------*/
+
+body { 
+    width: 100%;
+    font-family: 'Mali', sans-serif;
+    font-weight: 400,500,600;
+    font-style: normal;
+    margin: auto;
+     background-repeat: no-repeat;
+    background-size:cover;
+    object-fit: fill;
+}
+
+/* -------HEADERS & PARAGRAPHS ------*/
+
+h1 {
+    font-family: 'Mali', sans-serif;
+    font-weight: 600;
+    font-size:5em;
+    color: white;}
+
+.iron {
+    height:120px;
+    width: 230px;
+    box-shadow: -20px 25px 0px -20px white;}
+
+.chlorine {
+    height:120px;
+    width: 390px;
+    box-shadow: -20px 25px 0px -20px white;}
+
+.xenon {
+    height:120px;
+    width: 310px;
+    box-shadow: -20px 25px 0px -20px white;}
+
+.helium {
+    height:120px;
+    width: 330px;
+    box-shadow: -20px 25px 0px -20px white;}
+
+.Scandium {
+    height:120px;
+    width: 440px;
+    box-shadow: -20px 25px 0px -20px white;}
+
+h2 { 
+    padding-top: 1em;
+    font-size: 1.5em;
+    font-weight: 400;
+    color: white;}
+
+h3 { 
+    font-size: 2em;
+    color: white;}
+
+h4 {  
+    font-size: 2em;
+    color: #f26464;
+}
+    
+p {
+    font-size: 1em;
+    font-weight: 100;
+}
+    
+/* ------  NAV ------ */
+
+.navbar {
+    position: fixed;
+    z-index: 101;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0px 0;
+    background-color: transparent;}
+
+.icon {
+    position: relative;
+    display: inline-block;
+    padding-right: 2px;}
+
+.navbar {
+    z-index: 101;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0px 0;
+    background-color: transparent;}
+
+.icon {
+    position: relative;
+    display: inline-block;
+    padding-right: 2px;}
+
+nav ul {
+    padding-left: 2em;
+    padding-top: 0em;
+    list-style: none;
+    text-align: left;
+    background-color:transparent;
+}
+
+nav ul li {
+    margin: 0.5em;
+    border: 5px solid #f26464;
+    border-radius: 50px;
+    background-color: #f26464;
+    font-size:1.1em;
+    display: inline-block;}
+
+nav ul li a {
+  display: block;
+  padding-left: 0px;
+  text-decoration: none;
+  color: white;
+    margin: 5px;}
+
+nav li:hover {
+  background-color: #feb0be;
+  border: 5px solid #feb0be;
+    color: white
+}
+
+
+/* ------  GRID ------ */
+
+.help-wrapper {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-gap: 10px;
+}
+
+.help-wrapper > div {
+    align-content: center;
+}
+
+.one{
+    display: flex;
+  justify-content: center;
+  align-items: center;
+    padding-top: 2em;
+}
+
+.two {
+  justify-content: center;
+  align-items: center;
+    padding-top: 2em;
+}
+
+.button-container {
+    margin-top: 3em;
+}
+
+.button {
+    font-family: 'Mali', sans-serif;
+    background: white;
+    color: #E1504F;
+    font-size: 1.5em;
+    padding: 0.3em 3.4em;
+    border: 3px solid white;
+    border-radius: 25px;
+    box-shadow: 0 0 0 #E1504F;
+    transition: all 0.2s;
+}
+
+.button:hover {
+  box-shadow: 0.4rem 0.4rem 0 #E1504F;
+  transform: translate(-0.4rem, -0.4rem);
+}
+
+.button:active {
+  box-shadow: 0 0 0 #E1504F;
+  transform: translate(0, 0);
+}
+
+.button a {
+    color: #f26464;
+    text-decoration: none;}
+
+/* On screens that are 600px or less, set the background color to olive */
+@media screen and (max-width: 1500px){
+  
+    .buttonmobile {
+    visibility: hidden;}
+}
+  
+/* On screens that are 992px or less, set the background color to blue */
+@media screen and (max-width: 992px){
+
+.buttonmobile {
+    visibility: hidden;}
+
+}
+    
+/* On screens that are 600px or less, set the background color to olive */
+@media screen and (max-width: 600px){
+    
+    .help-wrapper {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-gap: 10px;
+}
+    
+.help-wrapper > div {
+    margin: 1em;
+     justify-items: center;
+  align-items: center;
+}
+
+
+       
+h1 { 
+    font-size: 4em;
+    }
+    
+h2 { 
+    padding-top: em;
+    font-size: 1em;}
+    
+h4 {
+    font-size: 1em;
+    }
+
+    
+.one {
+  padding-top: 4em;
+    padding-left:em;
+}
+
+.two {
+  padding-top: 1em;
+}
+    .button-container {
+    margin-top: 2em;
+    }
+
+.button {
+    overflow: hidden;
+    white-space: nowrap;
+    font-size: 1.2em;
+}
+    
+nav ul {
+    padding-left: 1em;
+
+}
+    
+.Scandium {
+    height:120px;
+    width: 400px;
+    box-shadow: -20px 25px 0px -20px white;}
+    
+}
+
+    
