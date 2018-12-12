@@ -1,0 +1,633 @@
+/* ------ CSS RESET ------ */
+* {
+    padding:0;
+    margin: 0;
+    font-size: 100%;
+    line-height: 1.5em;}
+
+/* ------ BODY -------*/
+
+body { 
+    width: 100%;
+    font-family: 'Mali', sans-serif;
+    font-weight: 400,500,600;
+    font-style: normal;
+    margin: auto;
+    background-repeat: no-repeat;
+    background-size:cover;
+    object-fit: fill;
+}
+
+.url {cursor: url(../images/cursor.png),auto;}
+/* -------HEADERS & PARAGRAPHS ------*/
+
+h1 {
+    font-family: 'Mali', sans-serif;
+    font-weight: 600;
+    padding: 0em 0em 0em 0em;
+    font-size: 3.5em;
+    color: #f26464;}
+
+.css-typing h1 {
+  border-right: .15em solid #f26464;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.css-typing h1:nth-child(1) {
+  width: 6em;
+  -webkit-animation: type 2s steps(40, end);
+  animation: type 2s steps(40, end);
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+
+.css-typing h1:nth-child(2) {
+  width: 7.5em;
+  opacity: 0;
+  -webkit-animation: type2 2s steps(30, end);
+  animation: type2 2s steps(30, end);
+  -webkit-animation-delay: 2s;
+  animation-delay: 2s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+
+@keyframes type {
+  0% {
+    width: 0;
+  }
+  99.9% {
+    border-right: .15em solid #f26464;
+  }
+  100% {
+    border: none;
+  }
+}
+
+@-webkit-keyframes type {
+  0% {
+    width: 0;
+  }
+  99.9% {
+    border-right: .15em solid #f26464;
+  }
+  100% {
+    border: none;
+  }
+}
+
+@keyframes type2 {
+  0% {
+    width: 0;
+  }
+  1% {
+    opacity: 1;
+  }
+  99.9% {
+    border-right: .15em solid #f26464;
+  }
+  100% {
+    opacity: 1;
+    border: none;
+  }
+}
+
+@-webkit-keyframes type2 {
+  0% {
+    width: 0;
+  }
+  1% {
+    opacity: 1;
+  }
+  99.9% {
+    border-right: .15em solid #f26464;
+  }
+  100% {
+    opacity: 1;
+    border: none;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+@-webkit-keyframes blink {
+  50% {
+}
+    border-color: tranparent;
+  }
+
+h2 { 
+    padding-top: 2em;
+    text-align: center;
+    font-size: 2em;
+    font-weight: 400;
+    color: white;}
+
+h3 { 
+    font-size: 2em;
+    color: white;}
+
+h4 {  
+    font-size: 2em;
+    color: #f26464;
+}
+    
+p {
+    font-size: 1em;
+    font-weight: 100;
+}
+    
+/*----------HOME GRID-----------*/
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-gap: 0px;
+}
+
+.one {
+    padding-top: 4em;
+    padding-left: 5em;
+}
+
+.two img {
+    padding-top: 0em;
+    object-fit: cover;
+    text-align: left;
+}
+
+.button-container {
+    margin-top: 2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;}
+
+.button {
+    font-family: 'Mali', sans-serif;
+    background: white;
+    color: #E1504F;
+    font-size: 1.5em;
+    padding: 0.3em 3em;
+    border: 3px solid white;
+    border-radius: 25px;
+    box-shadow: 0 0 0 #E1504F;
+    transition: all 0.2s;
+}
+
+.button:last-child {
+  margin: 20px 70px;
+}
+
+.button:hover {
+  box-shadow: 0.4rem 0.4rem 0 #E1504F;
+  transform: translate(-0.4rem, -0.4rem);
+}
+
+.button a {
+    color: #f26464;
+    text-decoration: none;}
+
+    
+/*----------ELEMENTS GRID-----------*/
+
+.elements-wrapper {
+  display: grid;
+  grid-template-columns: 20% 20% 20% 20% 20%;
+}
+
+.three img {
+    position: absolute;
+    top:54%;
+    left:9%;
+    }
+
+.element-image img { 
+    transition: all .2s ease-in-out;
+}
+
+.element-image img:hover { 
+    transform: scale(1.1);
+}
+
+.four img {
+    position: absolute;
+    top:1%;
+    left: 30%;
+    }
+
+.five img {
+    position: absolute;
+    top: 61%;
+    left: 48%;  
+}
+
+.six img {
+    position: absolute;
+    top: 4%;
+    left:54.5%;  
+}
+
+.seven img {
+    position: absolute;
+    top:0%
+    }
+
+/*------------HELP GRID----------*/
+
+.title-wrapper {
+    padding-top: 6em;
+    padding-left: 3em;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-gap: 10px;}
+    
+.help-wrapper {
+    margin: 50px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-gap: 10px;
+    text-align: center;
+}
+
+.eight img {
+    align-content: center;
+    object-fit: contain;
+    padding-top: 0em;;
+}
+
+.eight p {
+  padding-top: 1em;
+}
+
+.nine p {
+  padding-top: 1em;
+}
+
+.nine img {
+    align-items: center;
+    object-fit: contain;
+}
+
+.help-button-container {
+margin-top: 0em;
+    display: flex;
+    align-items: center;
+    justify-content: center;}
+
+.help-button {
+    font-family: 'Mali', sans-serif;
+    background: white;
+    color: #f26464;
+    font-size: 1.5em;
+    padding: 0.3em 3.4em;
+    border: 3px solid #f26464;
+    border-radius: 25px;
+    box-shadow: 0 0 0 #f26464;
+    transition: all 0.2s;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.help-button:last-child {
+  margin: 0px 70px;
+}
+
+.help-button:hover {
+  box-shadow: 0.4rem 0.4rem 0 #f26464;
+  transform: translate(-0.4rem, -0.4rem);
+}
+
+.help-button:active {
+  box-shadow: 0 0 0 #E1504F;
+  transform: translate(0, 0);
+}
+
+.help-button a {
+    color: #f26464;
+    text-decoration: none;}
+
+.speech-bubble {
+	position: relative;
+	background: white;
+    padding: 3em 2em 3em 5em;
+	border-radius: 3em;
+}
+
+.speech-bubble:after {
+	content: '';
+	position: absolute;
+	right: 0;
+	top: 50%;
+	width: 0;
+	height: 0;
+	border: 41px solid transparent;
+	border-left-color: white;
+	border-right: 0;
+	border-bottom: -0px;
+	margin-top: -40px;
+	margin-right: -40px;
+}
+
+.title{
+    padding-top: 4em;
+    padding-left: 2em;}
+
+.box two {
+  padding: 0px;
+}
+
+.box img {
+    width: 100%;
+    text-align: left;
+}
+
+.help-text {
+    display: inline-block;
+    text-align: center;
+}
+
+/*----------STACKED GRID-----------*/
+
+.stacked {
+   padding: 1em;
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-gap: 10px;}
+
+.chlorine img { 
+    ;
+}
+/*-------BUTTON---------*/
+
+.help-button-container {
+    margin: 0px 350px;
+    align-content: center;
+    padding: 1em 4em;}
+
+/*----------- POP UP ------------*/
+
+.modal {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: auto;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3em 5em;
+  border: 0px solid;
+  border-radius: 20px;
+  background: white;
+  box-shadow: 8px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.message {
+  font-size:2em;
+  margin-bottom: 2rem;
+  margin-top: 0;
+}
+
+.btn {
+    font-family: 'Mali', sans-serif;
+    background: white;
+    font-size: 1.5em;
+    color: #f26464;
+    padding: 0.3rem 3.4rem;
+    border: 3px solid #f26464;
+    border-radius: 25px;
+    box-shadow: 0 0 0 #f26464;
+    transition: all 0.2s;
+}
+
+.btn:last-child {
+  margin: 0px 40px;
+}
+
+.btn:hover {
+  box-shadow: 0.4rem 0.4rem 0 #f26464;
+  transform: translate(-0.4rem, -0.4rem);
+}
+
+.btn:active {
+  box-shadow: 0 0 0 #f26464;
+  transform: translate(0, 0);
+}
+
+.btn a {
+    text-decoration: none;
+    color: #f26464;}
+
+.options {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.elements-town img {
+    width: 100%;
+}
+
+.navbar {
+    z-index: 101;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0px 0;
+    background-color: transparent;}
+
+.icon {
+    position: relative;
+    display: inline-block;
+    padding-right: 2px;}
+
+nav ul {
+    padding-left: 2em;
+    padding-top: 0em;
+    list-style: none;
+    text-align: left;
+    background-color:transparent;
+}
+
+nav ul li {
+    margin: 0.5em;
+    border: 5px solid #f26464;
+    border-radius: 50px;
+    background-color: #f26464;
+    font-size:1.1em;
+    display: inline-block;}
+
+nav ul li a {
+  display: block;
+  padding-left: 0px;
+  text-decoration: none;
+  color: white;
+    margin: 5px;}
+
+nav li:hover {
+  background-color: #feb0be;
+  border: 5px solid #feb0be;
+    color: white
+}
+
+
+
+/* ------ MEDIA QUERIES -------*/
+
+/* On screens that are 600px or less, set the background color to olive */
+@media screen and (max-width: 1500px){
+  
+    .buttonmobile {
+    visibility: hidden;}
+}
+  
+/* On screens that are 992px or less, set the background color to blue */
+@media screen and (max-width: 992px){
+
+.buttonmobile {
+    visibility: hidden;}
+
+}
+    
+/* On screens that are 600px or less, set the background color to olive */
+@media screen and (max-width: 600px){
+    
+       
+h1 { 
+    font-size: 1em;
+    }
+    
+h2 { 
+    padding-top: em;
+    text-align: center;
+    font-size: 1em;}
+    
+h4 {
+    font-size: 1em;
+    }
+    
+.one {
+  padding-top: 1em;
+    padding-left:2em;
+}
+
+.two {
+  padding-top: 1em;
+}
+
+.speech-bubble {
+    padding: 2em 1em 2em 1em;
+	border-radius: 1em;
+}
+
+.speech-bubble:after {
+	top: 60%;
+}
+    
+.button-container {
+    margin-top: 0em;
+    }
+
+.button {
+    overflow: hidden;
+    white-space: nowrap;
+    font-size: 0em;
+}
+    
+.buttonmobile:last-child {
+  margin: 0px 0px;
+}
+
+.buttonmobile {
+    font-family: 'Mali', sans-serif;
+    background: white;
+    color: #E1504F;
+    font-size: 1em;
+    padding: 0.3em 3em;
+    border: 3px solid white;
+    border-radius: 25px;
+    box-shadow: 0 0 0 #E1504F;
+    transition: all 0.2s;
+}
+
+.buttonmobile:hover {
+  box-shadow: 0.4rem 0.4rem 0 #E1504F;
+  transform: translate(-0.4rem, -0.4rem);
+}
+
+.buttonmobile a {
+    color: #f26464;
+    text-decoration: none;}
+    
+.modal {
+  position: absolute;
+  left: 20%;
+  top: 25%;
+  transform: translate(-10%, -90%);
+  width: auto;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1em 0em;
+  border: 0px solid;
+  border-radius: 20px;
+  background: white;
+  box-shadow: 8px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.message {
+  font-size:1em;
+  margin-bottom: 2rem;
+  margin-top: 0;
+}
+
+.btn {
+    font-size: 1em;
+    padding: 0.3rem 2em;
+    border: 3px solid #f26464;
+    border-radius: 25px;
+    box-shadow: 0 0 0 #f26464;
+    transition: all 0.2s;
+}
+
+.btn:last-child {
+  margin: 0px 30px;
+}
+    
+.help-wrapper {
+    margin: 50px;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-gap: 10px;
+    text-align: center;
+}
+       
+.help-button-container {
+    margin: 0px 35px;
+    }
+  
+.mobileHide {
+    visibility:hidden;
+    }
+    
+.buttonmobile {
+    visibility: visible;
+    }
+    
+    /*----------STACKED GRID-----------*/
+
+.stacked {
+   padding: 1em;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-gap: 10px;}
+
+.chlorine img { 
+}
+    
+    
+    
